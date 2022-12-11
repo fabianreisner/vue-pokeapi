@@ -12,8 +12,10 @@ $offwhite: #ececec;
 $background: #00000085;
 
 // fonts
-// TODO!
-
+@font-face {
+  font-family: "Lato";
+  src: url(../assets/fonts/Lato-Regular.ttf) format("truetype");
+}
 // variables
 $padding: 10px;
 $radius: 5px;
