@@ -1,0 +1,26 @@
+.background-image {
+  background-image: url(/src/assets/images/lorelei-si-pkmntraveler-02.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 2 * $padding);
+  z-index: -1;
+  animation: darken 1s forwards;
+
+  @media screen and (min-width: $breakpoint-widescreen) {
+    background-image: url(/src/assets/images/lorelei-si-pkmntraveler-08.jpg);
+  }
+}
+
+@keyframes darken {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(0.5);
+  }
+}

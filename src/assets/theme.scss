@@ -1,0 +1,42 @@
+// breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 800px;
+$breakpoint-laptop: 1280px;
+$breakpoint-widescreen: 1920px;
+
+// timings
+$initial-delay: 1s;
+
+// colors
+$offwhite: #ececec;
+$background: #00000085;
+
+// fonts
+// TODO!
+
+// variables
+$padding: 10px;
+$radius: 5px;
+
+@import "./styles/backgroundImage.scss";
+@import "./styles/pokedex.scss";
+
+// global stlyes
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+small,
+strong,
+b {
+  font-family: "Lato", sans-serif;
+  color: $offwhite;
+}
+
+body {
+  margin: $padding;
+}
