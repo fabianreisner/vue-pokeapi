@@ -19,6 +19,9 @@ export default {
       }, 2000);
     },
     getData() {
+      if (this.pokemonName === "") {
+        return;
+      }
       if (this.showNextPokemon) {
         this.animationHelperClass = "hideOldResults";
       }
@@ -44,7 +47,7 @@ export default {
             name: "MissingNo.",
             order: 0,
             sprites: {
-              front_default: "src/assets/images/missingno.png",
+              front_default: "/src/assets/images/missingno.png",
             },
             stats: [
               { base_stat: 33, stat: { name: "hp" } },
